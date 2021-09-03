@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  input#elboton {
+   border: solid 1px #fff;
+   border-radius: 3px;
+   background: rgb(194, 255, 80);
+   height: 20px;
+   padding: 0px;
+   margin-top: 30px;
+      
+}   
+ 
+  header{
+    cursor: pointer;
+    text-align: center;
+    
+   }
+  
+  body{
+      font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  
+  nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+   
+  }
+
+  nav a{
+   color: rgb(22, 43, 236);
+   text-decoration: none;
+   
+   
+   
+  }
+
+  .icono{
+    display: block;
+    z-index: 100000000;
+    animation: moverIzquierda 1s ease-in;
+
+  }
+
+  header{
+   background: #4DA0B0;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   height: auto;
+   padding: 555px;
+   width: auto;
+   
+  }
+
+
+
+  .container{
+    width: auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    
+  }
+  .textos{
+    width: 50%;
+    color: #fff;
+  }
+   .textos h1{
+     font-size: 80px;
+     margin-top: 60px;
+     animation: moverDerecha 1s ease-in;
+   }
+
+   .textos h2{
+     font-size: 30px;
+     animation: moverIzquierda 1s ease-in;
+   }
+
+   .textos a{
+     display: inline-block;
+     color: #fff;
+     font-weight: 300;
+     text-decoration: none;
+     margin-top: 30px;
+     border: 1px solid #fff;
+     width: 150px;
+     border-radius: 3px;
+     text-align: center;
+     padding: 10px 0;
+   }
+   .wave{
+     height: 100px;
+     width: 100%;
+     background: #4DA0B0;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   }
+
+   .enlaces{
+     position: fixed;
+     display: flex;
+     top: 0;
+     background: #e2e1de;
+     justify-content: space-around;
+     align-items: center;
+     height: 100vh;
+     right: 0;
+     flex-direction: column;
+     width: 100%;
+     transition: all 1s ease;
+     background: #56ab2f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   }
+
+   .uno{
+    
+   -webit-clip-path: circle(0% at 0 0)
+   clip-path: circle(0% at 0 0);
+
+   }
+
+   .dos{
+   -webkit-clip-path: circle(6% at 0 0);
+   clip-path: circle(6% at 0 0); 
+
+
+   }
+
+
+   @keyframes moverIzquierda{
+     0%{
+       opacity: 0;
+       transform: translateX(-100px);
+     }
+     100%{
+       opacity: 1;
+       transform: translate(0);
+     }
+   }
+   @keyframes moverDerecha{
+     0%{
+       opacity: 0;
+       transform: translateX(100px);
+     }
+     100%{
+       opacity: 1;
+       transform: translate(0);
+     }
+   }
+
+   @media screen and (max-width:1000px){
+     img{
+       height: 100px;
+     }
+   }
+   @media screen and(max-width:450px){
+     img{
+       height: 250px;
+     }
+     .textos h1{
+       font-size: 70px;
+     }
+     .textos h2{
+       font-size: 25px;
+     }
+     .textos h3{
+       font-size: 10px;
+     }
+     
+   }
+
+
+   
+   
+
+
